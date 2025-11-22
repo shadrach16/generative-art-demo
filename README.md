@@ -4,7 +4,7 @@
 ![Performance](https://img.shields.io/badge/Performance-60fps-green)
 ![Tech](https://img.shields.io/badge/Tech-HTML5_Canvas-blue)
 
-### 🔗 [View Live Demo Here]([INSERT YOUR GITHUB PAGES LINK HERE])
+### 🔗 [View Live Demo Here](https://codepen.io/oluwamo-tunde/pen/xbVXmow)
 
 ## 📋 Overview
 This repository serves as a technical Proof of Concept (PoC) for the **Katashe Solutions** website refresh. It demonstrates a lightweight, high-performance generative animation system designed to simulate "blockchain nodes" and "decentralized networks."
@@ -39,7 +39,7 @@ This code is architected to be "drop-in" ready for Squarespace:
 
 ## 🚀 Setup & Usage
 To run this locally:
-1.  Clone the repo: `git clone [INSERT YOUR REPO LINK]`
+1.  Clone the repo: `git clone https://github.com/shadrach16/generative-art-demo.git`
 2.  Open `index.html` in any modern browser.
 
 ## 📄 Attribution & License
