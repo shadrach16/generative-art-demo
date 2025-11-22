@@ -5,12 +5,29 @@
 
 // Initialisation
 
-var canvasDiv = document.getElementById('particle-canvas');
-var options = {
+// Target the DOM element for the canvas injection
+const canvasDiv = document.getElementById('particle-canvas');
+
+// Configuration object for the particle network
+// Adjusted for a balance between visual density and 60fps performance
+const options = {
+  // Aesthetic: Neutral gray to match the minimalist/Stripe-like theme
   particleColor: '#888',
-  background: 'https://raw.githubusercontent.com/JulianLaval/canvas-particle-network/master/img/demo-bg.jpg',
+
+  // Background: Currently pointing to a placeholder asset.
+  // TODO: Replace with a local optimized WebP image for production to reduce LCP (Largest Contentful Paint).
+  background: '#0f172a',
+
+  // Interaction: Enables mouse-hover effects to increase user engagement (Web3 "connectivity" feel)
   interactive: true,
+
+  // Motion: Set to 'medium' to ensure the background feels alive but doesn't distract from the main hero copy
   speed: 'medium',
+
+  // Density: 'high' creates a rich mesh network visualization.
+  // Note: If mobile performance dips, we can dynamically switch this to 'medium' via a window width check.
   density: 'high'
 };
-var particleCanvas = new ParticleNetwork(canvasDiv, options);
+
+// Initialize the library with the DOM target and config
+const particleCanvas = new ParticleNetwork(canvasDiv, options);
